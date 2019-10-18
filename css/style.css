@@ -7213,7 +7213,7 @@ h1, h2, h3, h4, h5,
       right: 0;
       width: 40%;
       height: 80%;
-      background: #ffd180;
+      background: #cce5ff;
       opacity: 1;
       content: '';
       z-index: -1; }
@@ -7500,8 +7500,8 @@ h1, h2, h3, h4, h5,
 .bg-light {
   background: #f8f9fa !important; }
 
-.bg-primary {
-  background: #007bff !important; }
+.bg-secondary {
+  background: #007BFF !important; }
 
 .btn {
   cursor: pointer;
@@ -7847,7 +7847,7 @@ textarea.form-control {
       padding-bottom: 5em; } }
 
 .ftco-animate {
-  opacity: 0;
+  opacity: 0.5;
   visibility: hidden; }
 
 .bg-primary {
@@ -7997,6 +7997,11 @@ textarea.form-control {
 .img,
 .blog-img,
 .user-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.img-bg {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }

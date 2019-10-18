@@ -9,6 +9,7 @@ $darken: #232931;
 
 $primary: #FFA200;
 $secondary: #a0f669;
+$bg: #007BFF;
 
 
 
@@ -415,7 +416,8 @@ h1, h2, h3, h4, h5,
 			right: 0;
 			width: 40%;
 			height: 80%;
-			background: lighten($primary,25%);
+			//HERE TO CHANGE BACKGROUND COKOUR
+			background: lighten($bg,40%);
 			opacity: 1;
 			content: '';
 			z-index: -1;
@@ -762,8 +764,8 @@ h1, h2, h3, h4, h5,
 	background: #f8f9fa!important;
 }
 
-.bg-primary{
-	background: $blue!important; 
+.bg-secondary{
+	background: $bg!important; 
 }
 
 
@@ -848,6 +850,7 @@ h1, h2, h3, h4, h5,
 		z-index: 0;
 		position: relative;
 		.overlay{
+
 			width: 40%;
 			height: 30%;
 			display: block;
@@ -864,6 +867,7 @@ h1, h2, h3, h4, h5,
 			opacity: 1;
 		}
 		.img{
+			
 			display: block;
 			width: 100%;
 			position: relative;
@@ -872,6 +876,7 @@ h1, h2, h3, h4, h5,
 			-moz-box-shadow: -20px 20px 69px -27px rgba(0,0,0,0.33);
 			box-shadow: -20px 20px 69px -27px rgba(0,0,0,0.33);
 		}
+	
 	}
 }
 
@@ -1150,7 +1155,7 @@ textarea.form-control {
 }
 
 .ftco-animate {
-	opacity: 0;
+	opacity: 0.5;
 	visibility: hidden;
 }
 
@@ -1372,11 +1377,22 @@ textarea.form-control {
 .img,
 .blog-img,
 .user-img{
+
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 
+
+// change background image
+.img-bg{
+	// filter: blur(2px);
+	// -webkit-filter: blur(2px);
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
 
 // magnific pop up
 
