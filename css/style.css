@@ -7597,6 +7597,9 @@ h1, h2, h3, h4, h5,
     -webkit-box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.33);
     -moz-box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.33);
     box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.33); }
+  @media (max-width: 767.98px) {
+    .ftco-about .img-about {
+      height: 600px; } }
 
 .services {
   -moz-transition: all 0.3s ease;
@@ -8066,19 +8069,20 @@ textarea.form-control {
   .ftco-counter .text p {
     font-size: 24px;
     line-height: 1; }
-  .ftco-counter .text span.number {
-    font-weight: 400;
-    color: #fff;
-    font-size: 30px;
-    font-weight: 400; }
   .ftco-counter .text span {
     color: white;
     margin-bottom: 10px;
-    font-weight: 500;
-    display: block;
+    font-style: italic;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 18px; }
+    letter-spacing: 1.5px;
+    font-size: 35px;
+    font-weight: 700; }
+  .ftco-counter .text span.bigtext {
+    padding-inline-end: 5px;
+    font-style: normal;
+    font-weight: 700;
+    color: #fff;
+    font-size: 35px; }
 
 .block-20 {
   overflow: hidden;
