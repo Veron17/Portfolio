@@ -968,7 +968,10 @@ h5,
 			text-transform: uppercase;
 			position: relative;
 			// the line for explore
-			&:after {
+			//https://stackoverflow.com/questions/9822440/css-before-and-first-child-combined
+			// Adding :first-child helps to apply the pseudo element (which is the line) to this h3 only
+
+			:first-child:after {
 				position: absolute;
 				bottom: -15px;
 				left: 0;
@@ -1943,6 +1946,10 @@ textarea.form-control {
 	}
 }
 
+/*==================================
+    TIMELINE
+==================================*/
+
 /*-- GENERAL STYLES
     ------------------------------*/
 .timeline {
@@ -1974,12 +1981,13 @@ textarea.form-control {
 /*----- TIMELINE INFO -----*/
 
 .timeline-info {
+	//display: inline-block;
 	font-size: 12px;
 	font-weight: 700;
 	letter-spacing: 3px;
 	margin: 0 0 0.5em 0;
 	text-transform: uppercase;
-	white-space: nowrap;
+	white-space: normal;
 }
 /*----- TIMELINE MARKER -----*/
 
@@ -1994,19 +2002,19 @@ textarea.form-control {
 		border: 3px solid transparent;
 		border-radius: 100%;
 		content: "";
-		display: inline;
+		display: block;
 		height: 15px;
 		position: absolute;
 		top: 4px;
 		left: 0;
 		width: 15px;
-		//transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+		transition: 0.3s ease-in-out, border 0.3s ease-in-out;
 	}
 	&:after {
 		content: "";
 		width: 3px;
 		background: #ccd5db;
-		display: inline;
+		display: block;
 		position: absolute;
 		top: 24px;
 		bottom: 0;
