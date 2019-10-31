@@ -934,7 +934,7 @@ h5,
 	}
 	.media-body {
 		h3 {
-			font-size: 18px;
+			font-size: 25px;
 			font-weight: 500;
 		}
 	}
@@ -967,7 +967,11 @@ h5,
 			letter-spacing: 3px;
 			text-transform: uppercase;
 			position: relative;
-			&:after {
+			// the line for explore
+			//https://stackoverflow.com/questions/9822440/css-before-and-first-child-combined
+			// Adding :first-child helps to apply the pseudo element (which is the line) to this h3 only
+
+			:first-child:after {
 				position: absolute;
 				bottom: -15px;
 				left: 0;
@@ -1939,5 +1943,132 @@ textarea.form-control {
 	100% {
 		stroke-dasharray: 89, 200;
 		stroke-dashoffset: -136px;
+	}
+}
+
+/*==================================
+    TIMELINE
+==================================*/
+
+/*-- GENERAL STYLES
+    ------------------------------*/
+.timeline {
+	line-height: 1.4em;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		line-height: inherit;
+	}
+}
+
+/*----- TIMELINE ITEM -----*/
+
+.timeline-item {
+	padding-left: 40px;
+	position: relative;
+	&:last-child {
+		padding-bottom: 0;
+	}
+}
+
+/*----- TIMELINE INFO -----*/
+
+.timeline-info {
+	//display: inline-block;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	margin: 0 0 0.5em 0;
+	text-transform: uppercase;
+	white-space: normal;
+}
+/*----- TIMELINE MARKER -----*/
+
+.timeline-marker {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 15px;
+	&:before {
+		background: $primary;
+		border: 3px solid transparent;
+		border-radius: 100%;
+		content: "";
+		display: block;
+		height: 15px;
+		position: absolute;
+		top: 4px;
+		left: 0;
+		width: 15px;
+		transition: 0.3s ease-in-out, border 0.3s ease-in-out;
+	}
+	&:after {
+		content: "";
+		width: 3px;
+		background: #ccd5db;
+		display: block;
+		position: absolute;
+		top: 24px;
+		bottom: 0;
+		left: 6px;
+	}
+	.timeline-item:last-child &:after {
+		content: none;
+	}
+}
+.timeline-item:not(.period):hover .timeline-marker:before {
+	background: transparent;
+	border: 3px solid $primary;
+}
+
+/*----- TIMELINE CONTENT -----*/
+
+.timeline-content {
+	padding-bottom: 40px;
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/*----- TIMELINE PERIOD -----*/
+
+.period {
+	padding: 0;
+	.timeline-info {
+		display: none;
+	}
+	.timeline-marker {
+		&:before {
+			background: transparent;
+			content: "";
+			width: 15px;
+			height: auto;
+			border: none;
+			border-radius: 0;
+			top: 0;
+			bottom: 30px;
+			position: absolute;
+			border-top: 3px solid #ccd5db;
+			border-bottom: 3px solid #ccd5db;
+		}
+		&:after {
+			content: "";
+			height: 32px;
+			top: auto;
+		}
+	}
+	.timeline-content {
+		padding: 40px 0 70px;
+	}
+	.timeline-title {
+		margin: 0;
 	}
 }
