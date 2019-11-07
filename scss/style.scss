@@ -1663,9 +1663,25 @@ textarea.form-control {
 
 .contact-section {
 	.img {
+		display: block;
 		width: 100%;
-		background-position: top center;
+
+		position: relative;
+		-webkit-box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.5);
+		-moz-box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.5);
+		box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.5);
+		background-position: center !important;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+		.overlay {
+			background: rgba(39, 62, 84, 0.82);
+			overflow: hidden;
+			width: 100%;
+			z-index: 2;
+		}
 	}
+
+	//background-position: top center;
 	.contact-info {
 		p {
 			a {
@@ -1676,7 +1692,31 @@ textarea.form-control {
 		}
 	}
 	.contact-form {
-		width: 100%;
+		width: 80%;
+		margin-top: 2em;
+		margin-bottom: 10em;
+
+		background: #fff;
+		border-radius: 10px;
+
+		//padding: 82px 180px 33px 180px;
+		position: relative;
+
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		//https://medium.com/front-end-weekly/absolute-centering-in-css-ea3a9d0ad72e
+		//display: none;
+		// width: 100%;
+		// ::placeholder {
+		// 	/* Chrome, Firefox, Opera, Safari 10.1+ */
+		// 	color: rgb(77, 77, 77);
+		// 	opacity: 0.8; /* Firefox */
+		// }
+
+		flex-wrap: wrap;
+		justify-content: space-between;
+
 		.btn-primary {
 			@include media-breakpoint-down(sm) {
 				display: block;
@@ -1684,13 +1724,33 @@ textarea.form-control {
 			}
 		}
 	}
-}
-.block-9 {
+	h3 {
+		line-height: 1.3;
+		font-size: 20px;
+		font-weight: 600;
+
+		position: relative;
+	}
+	.form-group {
+		border-bottom: 2px solid #d9d9d9;
+	}
 	.form-control {
+		width: 100% !important;
 		outline: none !important;
 		box-shadow: none !important;
-		font-size: 15px;
+		font-size: 15px !important;
+		border: none !important;
+
+		//background: transparent !important;
 	}
+	.form-wrap {
+		display: block;
+
+		//padding: 2em;
+		//	width: calc((100% - 30px) / 2);
+	}
+}
+.block-9 {
 	#map {
 	}
 }
@@ -2135,4 +2195,10 @@ textarea.form-control {
 	outline-offset: -6px;
 	-webkit-transition: -webkit-transform 0.2s;
 	transition: transform 0.2s;
+}
+.grid-item-large {
+	width: 300px;
+	height: 300px;
+	background: #0c9;
+	z-index: 2;
 }

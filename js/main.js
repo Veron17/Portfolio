@@ -310,15 +310,22 @@ AOS.init({
 
 		var $grid = $('.grid').packery({
 			itemSelector: '.grid-item',
-			percentPosition: true
+			percentPosition: true,
+
 		});
 		// make all grid-items draggable
+
+		$grid.on('click', '.grid-item', function (event) {
+			// change size of item by toggling large class
+			$(event.currentTarget).toggleClass('grid-item-large');
+			// trigger shiftLayout after item size changes
+			$grid.packery('shiftLayout');
+		});
 		$grid.find('.grid-item').each(function (i, gridItem) {
 			var draggie = new Draggabilly(gridItem);
 			// bind drag events to Packery
 			$grid.packery('bindDraggabillyEvents', draggie);
 		});
-
 		// https://imagesloaded.desandro.com/
 		// layout Packery after each image loads
 		// $grid.imagesLoaded().progress(function () {
