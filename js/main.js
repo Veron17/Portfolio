@@ -365,6 +365,15 @@ AOS.init({
 
 	};
 	ssPhotoswipe();
+
+	var validateForm = function () {
+		var x = document.forms["form"]["name"].value;
+		if (x == "") {
+			alert("Name must be filled out");
+			return false;
+		}
+	}
+	validateForm();
 	// var packeryLibrary = function () {
 
 	// 	var $grid = $('.grid').packery({
