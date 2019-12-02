@@ -306,8 +306,100 @@ AOS.init({
 		fixedContentPos: false
 	});
 
+	$('.grid').colcade({
+		columns: '.grid-col',
+		items: '.grid-item'
+	});
 
+    /* photoswipe
+     * ----------------------------------------------------- */
+	var ssPhotoswipe = function () {
+		var items = [],
+			$pswp = $('.pswp')[0],
+			$folioItems = $('.item-folio');
 
+		// get items
+		$folioItems.each(function (i) {
 
+			var $folio = $(this),
+				$thumbLink = $folio.find('.thumb-link'),
+				$title = $folio.find('.item-folio__title'),
+				$caption = $folio.find('.item-folio__caption'),
+				$titleText = '<h4>' + $.trim($title.html()) + '</h4>',
+				$captionText = $.trim($caption.html()),
+				$href = $thumbLink.attr('href'),
+				$size = $thumbLink.data('size').split('x'),
+				$width = $size[0],
+				$height = $size[1];
+
+			var item = {
+				src: $href,
+				w: $width,
+				h: $height
+			}
+
+			if ($caption.length > 0) {
+				item.title = $.trim($titleText + $captionText);
+			}
+
+			items.push(item);
+		});
+
+		// bind click event
+		$folioItems.each(function (i) {
+
+			$(this).on('click', function (e) {
+				e.preventDefault();
+				var options = {
+					index: i,
+					showHideOpacity: true,
+
+				}
+
+				// initialize PhotoSwipe
+				var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
+				lightBox.init();
+			});
+
+		});
+
+	};
+	ssPhotoswipe();
+
+	var validateForm = function () {
+		var x = document.forms["form"]["name"].value;
+		if (x == "") {
+			alert("Name must be filled out");
+			return false;
+		}
+	}
+	validateForm();
+	// var packeryLibrary = function () {
+
+	// 	var $grid = $('.grid').packery({
+	// 		itemSelector: '.grid-item',
+	// 		percentPosition: true,
+
+	// 	});
+	// 	// make all grid-items draggable
+
+	// 	$grid.on('click', '.grid-item', function (event) {
+	// 		// change size of item by toggling large class
+	// 		$(event.currentTarget).toggleClass('grid-item-large');
+	// 		// trigger shiftLayout after item size changes
+	// 		$grid.packery('shiftLayout');
+	// 	});
+	// 	$grid.find('.grid-item').each(function (i, gridItem) {
+	// 		var draggie = new Draggabilly(gridItem);
+	// 		// bind drag events to Packery
+	// 		$grid.packery('bindDraggabillyEvents', draggie);
+	// 	});
+	// 	// https://imagesloaded.desandro.com/
+	// 	// layout Packery after each image loads
+	// 	// $grid.imagesLoaded().progress(function () {
+	// 	// 	$grid.packery();
+	// 	// });
+	// };
+	// packeryLibrary();
 })(jQuery);
 
