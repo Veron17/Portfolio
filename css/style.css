@@ -8808,7 +8808,7 @@ textarea.form-control {
 
 @media (min-width: 768px) {
   .grid-col {
-    width: 32%; }
+    width: 50%; }
   .grid-col--2 {
     display: block; } }
 

@@ -2538,8 +2538,9 @@ text-align: left!important;
 }
 
 @media ( min-width: 768px ) {
-  .grid-col { width: 32%; }
+  .grid-col { width: 50%; }
   .grid-col--2 { display: block; }
+  
 }
 
 @media ( min-width: 1200px ) {
