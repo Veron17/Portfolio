@@ -57,15 +57,27 @@
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav nav ml-auto">
-          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-          <li class="nav-item">
-            <a href="#exp-section" class="nav-link"><span>Experience</span></a>
+          <!-- data-target to class and not in id, in which this case is targeted to navbar-collapse class -->
+          <li class="nav-item"><a href="#home-section" data-toggle="collapse" data-target="navbar-collapse" class="
+              nav-link"><span>Home</span></a>
           </li>
-          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li>
-          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+          <li class="nav-item"><a href="#about-section" data-toggle="collapse" data-target="navbar-collapse" class="
+              nav-link"><span>About</span></a>
+          </li>
+          <li class="nav-item"><a href="#skills-section" data-toggle="collapse" data-target="navbar-collapse" class="
+              nav-link"><span>Skills</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#exp-section" data-toggle="collapse" data-target="navbar-collapse"
+              class="nav-link"><span>Experience</span></a>
+          </li>
+          <li class="nav-item"><a href="#projects-section" data-toggle="collapse" data-target="navbar-collapse"
+              class="nav-link"><span>Projects</span></a></li>
+          <li class="nav-item"><a href="#blog-section" data-toggle="collapse" data-target="navbar-collapse" class="
+              nav-link"><span>Blog</span></a>
+          </li>
+          <li class="nav-item"><a href="#contact-section" data-toggle="collapse" data-target="navbar-collapse"
+              class="nav-link"><span>Contact</span></a></li>
         </ul>
       </div>
     </div>
@@ -78,7 +90,7 @@
           <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
             data-scrollax-parent="true">
             <div class="one-third order-md-last img-bg" style="background-image:url(images/z.jpg);">
-
+              <!-- /https://github.com/OwlCarousel2/OwlCarousel2/issues/2143 Owl Carousel Touch Action Issue -->
               <div class="overlay"></div>
             </div>
             <div class="one-forth d-flex align-items-center ftco-animate"
@@ -91,33 +103,36 @@
                 <span class="subheading">Hello</span>
                 <!-- <h1 class="mb-4 mt-3">I'm <span>Niko Bochser</span></h1>
 					  <h2 class="mb-4">A Freelance Web Developer</h2> -->
-                <h1 class="mb-4 mt-3">I'm a student from <span>Singapore</span></h1>
-                <p><a href="#" class="btn-custom">Hire me</a></p>
+                <h1 class="mb-4 mt-3">I'm <br><span>Veleon Lim</span></h1>
+                <p><a href="#about-section" class="btn-custom">Take a tour</a></p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- <div class="slider-item">
-		  	<div class="overlay"></div>
-			<div class="container">
-			  <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-			  	<div class="one-third order-md-last img-bg" style="background-image:url(images/seoul.jpg);">
-			  		<div class="overlay"></div>
-			  	</div>
-				  <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-				  	<a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
-								<span class="ion-ios-play play"></span>
-							</a> 
-				  	<div class="text">
-						<h1 class="mb-4 mt-3">I'm a <span>web designer</span> from Scotland</h1>
-						<p><a href="#" class="btn-custom">Hire me</a></p>
-					</div>
-				  </div>
-				</div>
-			</div>
-		  </div> -->
+      <div class="slider-item">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row d-flex no-gutters slider-text align-items-end justify-content-end"
+            data-scrollax-parent="true">
+            <div class="one-third order-md-last img-bg" style="background-image:url(images/seoul.jpg);">
+              <div class="overlay"></div>
+            </div>
+            <div class="one-forth d-flex align-items-center ftco-animate"
+              data-scrollax=" properties: { translateY: '70%' }">
+              <a href="https://vimeo.com/45830194"
+                class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
+                <span class="ion-ios-play play"></span>
+              </a>
+              <div class="text">
+                <h1 class="mb-4 mt-3">I'm a <span>tech student</span> from Singapore</h1>
+                <p><a href="#about-section" class="btn-custom">Take a tour</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -441,9 +456,9 @@
     <div class="container">
       <div class="row justify-content-center pb-5">
         <div class="col-md-12 heading-section text-center ftco-animate">
-          <span class="subheading">Accomplishments</span>
-          <h2 class="mb-4">Snap</h2>
-          <p>Overview of my experience</p>
+          <span class="subheading">What I Have Done</span>
+          <h2 class="mb-4">Projects</h2>
+          <p>Overview of my projects</p>
           <!-- <h1>Colcade - flexbox</h1> -->
           <div class="row">
             <div class="grid">
@@ -471,9 +486,9 @@
                     </p>
 
                   </div>
-                  <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                  <!-- <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
                     <i class="im im-link"></i>
-                  </a>
+                  </a> -->
 
                   <div class="item-folio__caption">
                     <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
@@ -500,9 +515,7 @@
                     </p>
 
                   </div>
-                  <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                    <i class="im im-link"></i>
-                  </a>
+
 
                   <div class="item-folio__caption">
                     <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
@@ -529,9 +542,7 @@
                     </p>
 
                   </div>
-                  <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                    <i class="im im-link"></i>
-                  </a>
+
 
                   <div class="item-folio__caption">
                     <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
@@ -559,9 +570,7 @@
                     </p>
 
                   </div>
-                  <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                    <i class="im im-link"></i>
-                  </a>
+
 
                   <div class="item-folio__caption">
                     <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
@@ -589,9 +598,7 @@
                     </p>
 
                   </div>
-                  <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                    <i class="im im-link"></i>
-                  </a>
+
 
                   <div class="item-folio__caption">
                     <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
@@ -604,9 +611,8 @@
                 <div class="item-folio">
 
                   <div class="item-folio__thumb">
-                    <a href="images/skaterboy.jpg" class="thumb-link" title="The Beetle Car" data-size="1050x700">
-                      <img src="images/skaterboy.jpg" srcset="images/skaterboy.jpg 1x, images/skaterboy@2x.jpg 2x"
-                        alt="">
+                    <a href="images/bi.png" class="thumb-link" title="The Beetle Car" data-size="1120x858">
+                      <img src="images/bi.png" srcset="images/bi.png 1x" alt="">
                       <span class="shadow-overlay"></span>
                     </a>
                   </div>
@@ -619,9 +625,6 @@
                     </p>
 
                   </div>
-                  <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                    <i class="im im-link"></i>
-                  </a>
 
                   <div class="item-folio__caption">
                     <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
@@ -649,9 +652,7 @@
                     </p>
 
                   </div>
-                  <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                    <i class="im im-link"></i>
-                  </a>
+
 
                   <div class="item-folio__caption">
                     <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde

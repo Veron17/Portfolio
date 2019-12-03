@@ -123,11 +123,12 @@ AOS.init({
 	var carousel = function () {
 		$('.home-slider').owlCarousel({
 			loop: true,
-			autoplay: true,
+			autoplay: false,
 			margin: 0,
 			animateOut: 'fadeOut',
 			animateIn: 'fadeIn',
 			nav: false,
+			autoplayTimeout: 8000,
 			autoplayHoverPause: false,
 			items: 1,
 			navText: ["<span class='ion-md-arrow-back'></span>", "<span class='ion-chevron-right'></span>"],
