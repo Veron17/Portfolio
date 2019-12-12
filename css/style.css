@@ -8229,6 +8229,10 @@ textarea.form-control {
   border-bottom: 2px solid #d9d9d9;
   margin-bottom: 5em; }
 
+.contact-section .form-group-submit {
+  position: relative;
+  margin-bottom: 5em; }
+
 .contact-section .form-control {
   width: 100% !important;
   outline: none !important;
