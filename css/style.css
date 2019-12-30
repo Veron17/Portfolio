@@ -7890,7 +7890,8 @@ textarea.form-control {
   background: #65afff;
   padding: 2em 0; }
   .ftco-footer .footer-pad {
-    padding-top: 12em; }
+    padding-top: 12em;
+    padding-bottom: 0em; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
     letter-spacing: 0.1em; }
