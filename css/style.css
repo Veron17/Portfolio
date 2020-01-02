@@ -7891,7 +7891,6 @@ textarea.form-control {
   bottom: 0;
   font-size: 12px;
   background: #cce5ff;
-  padding: 2em 0;
   z-index: -1; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
@@ -7924,29 +7923,6 @@ textarea.form-control {
     font-size: 17px;
     font-weight: 400;
     color: #000000; }
-
-.ftco-footer-social {
-  text-align: right;
-  padding: 1em; }
-  .ftco-footer-social li {
-    list-style: none;
-    margin: 0 10px 0 0;
-    display: inline-block; }
-    .ftco-footer-social li a {
-      height: 50px;
-      width: 50px;
-      display: block;
-      background: rgba(0, 0, 0, 0.1);
-      border-radius: 50%;
-      position: relative; }
-      .ftco-footer-social li a span {
-        position: absolute;
-        font-size: 20px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); }
-      .ftco-footer-social li a:hover {
-        color: #fff; }
 
 .footer-small-nav > li {
   display: inline-block; }
@@ -8191,8 +8167,8 @@ textarea.form-control {
 
 .contact-section .img {
   display: block;
-  width: 100%;
-  height: 750px;
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
   position: relative;
   -webkit-box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.5);
@@ -8271,6 +8247,31 @@ textarea.form-control {
   -moz-transition: all 0.4s;
   transition: all 0.4s;
   background: #ffa200; }
+
+.contact-section .contact-social {
+  text-align: right;
+  padding-top: 3em;
+  position: relative; }
+  .contact-section .contact-social li {
+    list-style: none;
+    margin: 0 10px 0 0;
+    display: inline-block; }
+    .contact-section .contact-social li a {
+      color: #000000;
+      height: 50px;
+      width: 50px;
+      display: block;
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      position: relative; }
+      .contact-section .contact-social li a span {
+        position: absolute;
+        font-size: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      .contact-section .contact-social li a:hover {
+        color: #fff; }
 
 .fa-envelope {
   display: flex;
