@@ -7503,6 +7503,7 @@ h5,
           color: #ffa200; }
 
 .slider-text .bread {
+  transform: translate(0, -350%);
   font-weight: 700;
   color: #000000; }
 
@@ -7890,16 +7891,8 @@ textarea.form-control {
   height: 40% !important;
   bottom: 0;
   font-size: 12px;
-<<<<<<< HEAD
-  background: #65afff;
-  padding: 2em 0; }
-  .ftco-footer .footer-pad {
-    padding-top: 12em;
-    padding-bottom: 0em; }
-=======
   background: #cce5ff;
   z-index: -1; }
->>>>>>> newbranch
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
     letter-spacing: 0.1em; }
@@ -8222,10 +8215,6 @@ textarea.form-control {
 .contact-section .form-group {
   position: relative;
   border-bottom: 2px solid #d9d9d9;
-  margin-bottom: 5em; }
-
-.contact-section .form-group-submit {
-  position: relative;
   margin-bottom: 5em; }
 
 .contact-section .form-control {
