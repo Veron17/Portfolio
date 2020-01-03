@@ -7919,6 +7919,9 @@ textarea.form-control {
     color: rgba(255, 255, 255, 0.7); }
     .ftco-footer a:hover {
       color: #fff; }
+  .ftco-footer span {
+    position: absolute;
+    text-align: right; }
   .ftco-footer .ftco-heading-2 {
     font-size: 17px;
     font-weight: 400;
@@ -8197,6 +8200,10 @@ textarea.form-control {
     .contact-section .contact-form .btn-primary {
       display: block;
       width: 100%; } }
+  @media (min-width: 768px) {
+    .contact-section .contact-form .btn-primary {
+      display: block;
+      margin-left: auto; } }
 
 .contact-section h3 {
   line-height: 1.3;
@@ -8272,6 +8279,11 @@ textarea.form-control {
         transform: translate(-50%, -50%); }
       .contact-section .contact-social li a:hover {
         color: #fff; }
+
+.contact-section .copyright {
+  display: flex;
+  justify-content: center;
+  padding-top: 5em; }
 
 .fa-envelope {
   display: flex;
