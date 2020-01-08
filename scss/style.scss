@@ -926,6 +926,7 @@ h5,
 		}
 
 		.img {
+			transition: .3s ease-out;
 			display: block;
 			width: 100%;
 			position: relative;
@@ -933,10 +934,17 @@ h5,
 			-webkit-box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.5);
 			-moz-box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.5);
 			box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.5);
+			&:hover{
+				transform: perspective(1000px) rotateY(5deg) ;
+			}
 		}
 		//include pic
 		@include media-breakpoint-down(sm) {
 			height: 600px;
+			&:hover{
+				transition: none !important;
+				transform:none !important;
+			}
 		}
 	}
 }
