@@ -1532,12 +1532,25 @@ textarea.form-control {
 	height: 350px;
 }
 .blog-entry {
+	transition: .3s ease-out;
 	position: relative;
-	@include media-breakpoint-up(md) {
+	@include media-breakpoint-up(md)
+	{
+	
+
 		margin-bottom: 30px;
+			
 	}
 	@include media-breakpoint-down(sm) {
-		margin-bottom: 30px;
+		margin-bottom: 30px;	
+		&:hover {
+			transition: none !important;
+			transform: none !important;
+}
+	}
+	&:hover{
+	
+		transform: perspective(1000px) rotateY(-10deg) 
 	}
 	.text {
 		width: 100%;

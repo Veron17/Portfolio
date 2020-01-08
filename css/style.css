@@ -8090,13 +8090,19 @@ textarea.form-control {
   height: 350px; }
 
 .blog-entry {
+  transition: .3s ease-out;
   position: relative; }
   @media (min-width: 768px) {
     .blog-entry {
       margin-bottom: 30px; } }
   @media (max-width: 767.98px) {
     .blog-entry {
-      margin-bottom: 30px; } }
+      margin-bottom: 30px; }
+      .blog-entry:hover {
+        transition: none !important;
+        transform: none !important; } }
+  .blog-entry:hover {
+    transform: perspective(1000px) rotateY(-10deg); }
   .blog-entry .text {
     width: 100%;
     margin: 0 auto; }
