@@ -7310,16 +7310,30 @@ h5,
                 padding-right: 3em; } }
         .owl-carousel.home-slider .slider-item .slider-text .icon-video {
           position: absolute;
-          top: 120px;
+          top: 150px;
           right: 70px;
           content: "";
-          width: 70px;
-          height: 70px;
+          width: 55px;
+          height: 55px;
           background: #fff;
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           -ms-border-radius: 50%;
           border-radius: 50%; }
+          @media (min-width: 992px) and (max-width: 1199.98px) {
+            .owl-carousel.home-slider .slider-item .slider-text .icon-video {
+              position: absolute;
+              top: 150px;
+              right: 300px;
+              width: 70px;
+              height: 70px; } }
+          @media (min-width: 1200px) {
+            .owl-carousel.home-slider .slider-item .slider-text .icon-video {
+              position: absolute;
+              top: 150px;
+              right: 150px;
+              width: 70px;
+              height: 70px; } }
           .owl-carousel.home-slider .slider-item .slider-text .icon-video span {
             font-size: 20px;
             color: #000000; }
@@ -7600,7 +7614,7 @@ h5,
     margin-left: -60px;
     opacity: 1; }
   .ftco-about .img-about .img {
-    transition: .3s ease-out;
+    transition: 0.3s ease-out;
     display: block;
     width: 100%;
     position: relative;
@@ -7610,7 +7624,7 @@ h5,
     box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.5); }
     @media (min-width: 768px) {
       .ftco-about .img-about .img {
-        height: 600px; } }
+        height: 800px; } }
     @media (max-width: 767.98px) {
       .ftco-about .img-about .img {
         height: 600px; }
@@ -8099,7 +8113,7 @@ textarea.form-control {
   height: 350px; }
 
 .blog-entry {
-  transition: .3s ease-out;
+  transition: 0.3s ease-out;
   position: relative; }
   @media (min-width: 768px) {
     .blog-entry {
@@ -8656,7 +8670,8 @@ textarea.form-control {
     padding-left: 15px; }
   .about-content .right .timeline {
     margin-top: 0; }
-  .about-content .left > h3, .about-content .right > h3 {
+  .about-content .left > h3,
+  .about-content .right > h3 {
     text-align: center; } }
 
 @media only screen and (max-width: 600px) {
@@ -8706,7 +8721,7 @@ textarea.form-control {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: .8;
+    opacity: 0.8;
     background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
     background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
     background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%); }
@@ -8739,7 +8754,7 @@ textarea.form-control {
     left: 50%;
     top: 50%;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: all 0.5s ease-in-out;
@@ -8756,17 +8771,17 @@ textarea.form-control {
     z-index: 2; }
   .grid .item-folio__title {
     text-align: left !important;
-    color: #FFFFFF !important;
-    font-family: 'Montserrat', sans-serif;
+    color: #ffffff !important;
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 1rem;
     text-transform: uppercase;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     margin: 0; }
   .grid .item-folio__cat {
     text-align: left !important;
     color: rgba(255, 255, 255, 0.5);
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 1rem;
     margin-bottom: 0; }
@@ -8774,8 +8789,8 @@ textarea.form-control {
     display: none; }
   .grid .item-folio__project-link {
     display: block;
-    color: #FFFFFF;
-    box-shadow: 0 0 0 1px #FFFFFF;
+    color: #ffffff;
+    box-shadow: 0 0 0 1px #ffffff;
     border-radius: 50%;
     height: 4.2rem;
     width: 4.2rem;
@@ -8801,8 +8816,10 @@ textarea.form-control {
     position: absolute;
     top: 50%;
     left: -3rem; }
-  .grid .item-folio__project-link:hover, .grid .item-folio__project-link:focus, .grid .item-folio__project-link:active {
-    background-color: #FFFFFF;
+  .grid .item-folio__project-link:hover,
+  .grid .item-folio__project-link:focus,
+  .grid .item-folio__project-link:active {
+    background-color: #ffffff;
     color: #000000; }
   .grid .item-folio:hover .item-folio__thumb a::before {
     opacity: 1;
@@ -8827,10 +8844,11 @@ textarea.form-control {
 .grid-col {
   float: left;
   width: 49%;
-  background: #DDD; }
+  background: #ddd; }
 
 /* hide two middle */
-.grid-col--2, .grid-col--3 {
+.grid-col--2,
+.grid-col--3 {
   display: none; }
 
 @media (min-width: 200px) {
@@ -8848,7 +8866,8 @@ textarea.form-control {
 @media (min-width: 1200px) {
   .grid-col {
     width: 33.3%; }
-  .grid-col--2, .grid-col--3 {
+  .grid-col--2,
+  .grid-col--3 {
     display: block; } }
 
 .grid-item {
@@ -8938,7 +8957,8 @@ textarea.form-control {
   height: 100%;
   overflow: hidden; }
 
-.pswp__container, .pswp__zoom-wrap {
+.pswp__container,
+.pswp__zoom-wrap {
   -ms-touch-action: none;
   touch-action: none;
   position: absolute;
@@ -8948,7 +8968,8 @@ textarea.form-control {
   bottom: 0; }
 
 /* Prevent selection and tap highlights */
-.pswp__container, .pswp__img {
+.pswp__container,
+.pswp__img {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -8972,11 +8993,13 @@ textarea.form-control {
   -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
   transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1); }
 
-.pswp--animated-in .pswp__bg, .pswp--animated-in .pswp__zoom-wrap {
+.pswp--animated-in .pswp__bg,
+.pswp--animated-in .pswp__zoom-wrap {
   -webkit-transition: none;
   transition: none; }
 
-.pswp__container, .pswp__zoom-wrap {
+.pswp__container,
+.pswp__zoom-wrap {
   -webkit-backface-visibility: hidden; }
 
 .pswp__item {
@@ -9027,10 +9050,10 @@ textarea.form-control {
   font-size: 14px;
   line-height: 16px;
   margin-top: -8px;
-  color: #CCC; }
+  color: #ccc; }
 
 .pswp__error-msg a {
-  color: #CCC;
+  color: #ccc;
   text-decoration: underline; }
 
 /* ===================================================================
@@ -9071,7 +9094,8 @@ textarea.form-control {
   -webkit-box-shadow: none;
   box-shadow: none; }
 
-.pswp__button:focus, .pswp__button:hover {
+.pswp__button:focus,
+.pswp__button:hover {
   opacity: 1;
   background-color: transparent; }
 
@@ -9090,7 +9114,9 @@ over element that should close gallery
 .pswp__ui--over-close .pswp__button--close {
   opacity: 1; }
 
-.pswp__button, .pswp__button--arrow--left:before, .pswp__button--arrow--right:before {
+.pswp__button,
+.pswp__button--arrow--left:before,
+.pswp__button--arrow--right:before {
   background: url(../images/photoswipe/default-skin.png) 0 0 no-repeat;
   background-size: 264px 88px;
   width: 44px;
@@ -9098,9 +9124,12 @@ over element that should close gallery
 
 @media (-webkit-min-device-pixel-ratio: 1.1), (-webkit-min-device-pixel-ratio: 1.09375), (min-resolution: 105dpi), (min-resolution: 1.1dppx) {
   /* Serve SVG sprite if browser supports SVG and resolution is more than 105dpi */
-  .pswp--svg .pswp__button, .pswp--svg .pswp__button--arrow--left:before, .pswp--svg .pswp__button--arrow--right:before {
+  .pswp--svg .pswp__button,
+  .pswp--svg .pswp__button--arrow--left:before,
+  .pswp--svg .pswp__button--arrow--right:before {
     background-image: url(../images/photoswipe/default-skin.svg); }
-  .pswp--svg .pswp__button--arrow--left, .pswp--svg .pswp__button--arrow--right {
+  .pswp--svg .pswp__button--arrow--left,
+  .pswp--svg .pswp__button--arrow--right {
     background: none; } }
 
 .pswp__button--close {
@@ -9129,14 +9158,16 @@ over element that should close gallery
   background-position: -132px 0; }
 
 /* no arrows on touch screens */
-.pswp--touch .pswp__button--arrow--left, .pswp--touch .pswp__button--arrow--right {
+.pswp--touch .pswp__button--arrow--left,
+.pswp--touch .pswp__button--arrow--right {
   visibility: hidden; }
 
 /*
 Arrow buttons hit area
 (icon is added to :before pseudo-element)
 */
-.pswp__button--arrow--left, .pswp__button--arrow--right {
+.pswp__button--arrow--left,
+.pswp__button--arrow--right {
   background: none;
   top: 50%;
   margin-top: -22px;
@@ -9150,8 +9181,9 @@ Arrow buttons hit area
 .pswp__button--arrow--right {
   right: 12px; }
 
-.pswp__button--arrow--left:before, .pswp__button--arrow--right:before {
-  content: '';
+.pswp__button--arrow--left:before,
+.pswp__button--arrow--right:before {
+  content: "";
   top: 0;
   background-color: rgba(0, 0, 0, 0.3);
   height: 30px;
@@ -9170,7 +9202,8 @@ Arrow buttons hit area
 /* -------------------------------------------------------------------
  * ## 2. Share modal/popup and links
  * ------------------------------------------------------------------- */
-.pswp__counter, .pswp__share-modal {
+.pswp__counter,
+.pswp__share-modal {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -9198,7 +9231,7 @@ Arrow buttons hit area
 .pswp__share-tooltip {
   z-index: 1620;
   position: absolute;
-  background: #FFF;
+  background: #fff;
   top: 56px;
   border-radius: 3px;
   display: block;
@@ -9246,7 +9279,7 @@ Arrow buttons hit area
   padding: 16px 12px; }
 
 a.pswp__share--facebook:before {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 0;
@@ -9254,28 +9287,28 @@ a.pswp__share--facebook:before {
   top: -12px;
   right: 15px;
   border: 6px solid transparent;
-  border-bottom-color: #FFF;
+  border-bottom-color: #fff;
   -webkit-pointer-events: none;
   -moz-pointer-events: none;
   pointer-events: none; }
 
 a.pswp__share--facebook:hover {
-  background: #3E5C9A;
-  color: #FFF; }
+  background: #3e5c9a;
+  color: #fff; }
 
 a.pswp__share--facebook:hover:before {
-  border-bottom-color: #3E5C9A; }
+  border-bottom-color: #3e5c9a; }
 
 a.pswp__share--twitter:hover {
-  background: #55ACEE;
-  color: #FFF; }
+  background: #55acee;
+  color: #fff; }
 
 a.pswp__share--pinterest:hover {
-  background: #CCC;
-  color: #CE272D; }
+  background: #ccc;
+  color: #ce272d; }
 
 a.pswp__share--download:hover {
-  background: #DDD; }
+  background: #ddd; }
 
 /* -------------------------------------------------------------------
  * ## 3. Index indicator ("1 of X" counter)
@@ -9287,7 +9320,7 @@ a.pswp__share--download:hover {
   height: 44px;
   font-size: 13px;
   line-height: 44px;
-  color: #FFF;
+  color: #fff;
   opacity: 0.75;
   padding: 0 10px; }
 
@@ -9295,7 +9328,7 @@ a.pswp__share--download:hover {
  * ## 4. Caption
  * ------------------------------------------------------------------- */
 .pswp__caption {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   position: absolute;
   left: 0;
@@ -9305,8 +9338,8 @@ a.pswp__share--download:hover {
 
 .pswp__caption h4 {
   line-height: 1.333;
-  margin: 0 0 .6rem;
-  color: #FFFFFF; }
+  margin: 0 0 0.6rem;
+  color: #ffffff; }
 
 .pswp__caption small {
   font-size: 11px;
@@ -9393,7 +9426,7 @@ a.pswp__share--download:hover {
   box-sizing: border-box;
   width: 14px;
   height: 14px;
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
   border-radius: 50%;
   border-left-color: transparent;
   border-bottom-color: transparent;
@@ -9471,40 +9504,52 @@ a.pswp__share--download:hover {
   width: 100%;
   padding: 0 6px; }
 
-.pswp__caption, .pswp__top-bar, .pswp--has_mouse .pswp__button--arrow--left, .pswp--has_mouse .pswp__button--arrow--right {
+.pswp__caption,
+.pswp__top-bar,
+.pswp--has_mouse .pswp__button--arrow--left,
+.pswp--has_mouse .pswp__button--arrow--right {
   -webkit-backface-visibility: hidden;
   will-change: opacity;
   -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
   transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1); }
 
 /* pswp--has_mouse class is added only when two subsequent mousemove events occur */
-.pswp--has_mouse .pswp__button--arrow--left, .pswp--has_mouse .pswp__button--arrow--right {
+.pswp--has_mouse .pswp__button--arrow--left,
+.pswp--has_mouse .pswp__button--arrow--right {
   visibility: visible; }
 
-.pswp__top-bar, .pswp__caption {
+.pswp__top-bar,
+.pswp__caption {
   background-color: rgba(0, 0, 0, 0.5); }
 
 /* pswp__ui--fit class is added when main image "fits" between top bar and bottom bar (caption) */
-.pswp__ui--fit .pswp__top-bar, .pswp__ui--fit .pswp__caption {
+.pswp__ui--fit .pswp__top-bar,
+.pswp__ui--fit .pswp__caption {
   background-color: rgba(0, 0, 0, 0.3); }
 
 /* pswp__ui--idle class is added when mouse isn't moving for several seconds (JS option timeToIdle) */
 .pswp__ui--idle .pswp__top-bar {
   opacity: 0; }
 
-.pswp__ui--idle .pswp__button--arrow--left, .pswp__ui--idle .pswp__button--arrow--right {
+.pswp__ui--idle .pswp__button--arrow--left,
+.pswp__ui--idle .pswp__button--arrow--right {
   opacity: 0; }
 
 /*
 	pswp__ui--hidden class is added when controls are hidden
 	e.g. when user taps to toggle visibility of controls
 */
-.pswp__ui--hidden .pswp__top-bar, .pswp__ui--hidden .pswp__caption, .pswp__ui--hidden .pswp__button--arrow--left, .pswp__ui--hidden .pswp__button--arrow--right {
+.pswp__ui--hidden .pswp__top-bar,
+.pswp__ui--hidden .pswp__caption,
+.pswp__ui--hidden .pswp__button--arrow--left,
+.pswp__ui--hidden .pswp__button--arrow--right {
   /* Force paint & create composition layer for controls. */
   opacity: 0.001; }
 
 /* pswp__ui--one-slide class is added when there is just one item in gallery */
-.pswp__ui--one-slide .pswp__button--arrow--left, .pswp__ui--one-slide .pswp__button--arrow--right, .pswp__ui--one-slide .pswp__counter {
+.pswp__ui--one-slide .pswp__button--arrow--left,
+.pswp__ui--one-slide .pswp__button--arrow--right,
+.pswp__ui--one-slide .pswp__counter {
   display: none; }
 
 .pswp__element--disabled {
