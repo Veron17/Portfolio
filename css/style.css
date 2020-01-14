@@ -7608,14 +7608,17 @@ h5,
     -webkit-box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.5);
     box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.5); }
+    @media (min-width: 768px) {
+      .ftco-about .img-about .img {
+        height: 600px; } }
+    @media (max-width: 767.98px) {
+      .ftco-about .img-about .img {
+        height: 600px; }
+        .ftco-about .img-about .img:hover {
+          transition: none !important;
+          transform: none !important; } }
     .ftco-about .img-about .img:hover {
       transform: perspective(1000px) rotateY(5deg); }
-  @media (max-width: 767.98px) {
-    .ftco-about .img-about {
-      height: 600px; }
-      .ftco-about .img-about:hover {
-        transition: none !important;
-        transform: none !important; } }
 
 .services {
   -moz-transition: all 0.3s ease;
